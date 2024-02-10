@@ -25,21 +25,21 @@
 
   <nav
   id="nav"
-    class="flex justify-between items-center w-[100%]  py-3 px-8  sticky fixed top-0 z-10 bg-transparent"
+    class="flex justify-between items-center w-[100%]  py-4 px-8  sticky fixed top-0 z-10 bg-transparent"
   >
     <div class="flex items-center">
       <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden text-[#343434] "></ion-icon>
       <img
-        class="w-40 cursor-pointer hidden md:flex"
+        class="w-[210px] h-[66px] cursor-pointer hidden md:flex"
         src="/Assets/heropictures/blockchains-logo.svg"
         alt="..."
       />
     </div>
     <div class="nav-links1 flex items-center text-sm hidden md:flex">
-      <ul class="text-[#343434] flex md:gap-[3vw]">
-        <li class="hover:text-[#61999e]">SOLUTIONS</li>
-        <li class="hover:text-[#61999e]">THE LATEST</li>
-        <li class="hover:text-[#61999e]">ABOUT</li>
+      <ul class="text-[#343434] flex md:gap-[3vw] font-medium tracking-[.25em]">
+        <li class="hover:text-[#61999e] font-semibold">SOLUTIONS</li>
+        <li class="hover:text-[#61999e] font-semibold">THE LATEST</li>
+        <li class="hover:text-[#61999e] font-semibold">ABOUT</li>
       </ul>
     </div>
     <div class="nav-links2 flex items-center text-base hidden md:flex">
@@ -76,7 +76,7 @@
             class="items-center justify-center text-center animate__fadeOutUp fade-text" id="fadingText"
           >
             <h1 class="text-5xl px-5 mb-3">Web3 <b> ID</b></h1>
-            <p class="text-lg text-base">
+            <p class="text-lg text-base tracking-[.10em]">
               In the new and exciting world of the decentralized
               internet, otherwise known as Web3, we believe </br> the foundation
               starts with having a digital identity that you own and control.
@@ -86,29 +86,13 @@
       </header>
     </section>
 
-    <section class="py-96 bg-black">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac semper
-        nisl. Nullam eleifend ut justo ut bibendum. Ut eget justo auctor,
-        vulputate tellus ut, dignissim nulla. Integer eget lectus ut urna
-        facilisis tristique. Sed ac lacus eget leo auctor lacinia. Quisque vel
-        nisl eu ex fringilla ullamcorper. Praesent vel dapibus velit. Integer ut
-        lacinia ex, id feugiat orci. Duis volutpat justo eget sapien auctor, ut
-        dictum erat bibendum. In hac habitasse platea dictumst. Sed varius,
-        lectus in tincidunt malesuada, urna elit eleifend tortor, nec convallis
-        libero metus vitae quam. Sed vel dapibus libero. Donec at tellus eget
-        odio efficitur malesuada.
+    <section class="py-96 flex justify-center text-center mx-auto ">
+      <p class="text-5xl leading-snug w-[700px] px-[40px] text-[#808080]">
+        We are committed to an <b class=" text-black">interoperable</b> Web3 ID
+        that can be <b class=" text-black">your identity</b>  wherever you go in the emerging <b class=" text-black">Web3 world</b> .
       </p>
     </section>
-
-
-
-
 <script>
-
-
-
-
 function onToggleMenu(icon) {
     const navLinks = document.querySelector('.nav-links1');
     const menuLinks = document.querySelectorAll('.nav-links1 li');
@@ -165,8 +149,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.style.overflow = "auto"; 
   }, 2000);
 });
-
 </script>
-
   </body>
 </html>
