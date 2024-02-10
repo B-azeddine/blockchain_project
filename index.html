@@ -1,9 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Hero Section -->
+    <section class="h-[100vh] bg-red-500"></section>
+
+    <!-- Youssef Ababou -->
+    <section class="bg-zinc-900">
+      <div class="grid grid-cols-1 lg:grid-cols-2 ps-8 lg:ps-28">
+        <div class="py-24">
+          <h2
+            class="text-white text-5xl lg:text-7xl mb-1 lg:mb-32 py-12 lg:py-0"
+          >
+            Experience <br />
+            the Blockchains Difference
+          </h2>
+          <h4 class="text-white text-2xl lg:text-3xl lg:mb-12 mb-4">
+            You should be in control of you.
+          </h4>
+          <p class="text-white w-[100%] lg:w-[60%]">
+            Our software solutions presently in development focus on preparing
+            the world for the next phase of the internet’s evolution to Web3 –
+            leveraging a Web3 ID to usher in a new era of control where all Web3
+            participants can access new opportunities.
+          </p>
+        </div>
+        <div>
+          <img
+            src="Assets/differentSectionspics/LOGO_BLK_R_00030-min.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="px-8 lg:px-28">
+        <div class="slick">
+          <div class="slick-carousel-item p-4">
+            <div class="relative">
+              <img
+                class="relative w-full"
+                src="Assets/youssef/sddefault.jpg"
+                alt=""
+              />
+
+              <div
+                class="absolute top-0 w-full h-full flex justify-center items-center"
+              >
+                <i class="bx bx-play-circle text-white text-6xl"></i>
+              </div>
+            </div>
+            <div class="text-white text-center my-6">
+              <h2 class="text-2xl mb-5 font-semibold">
+                Benefits of Blockchain Technology
+              </h2>
+              <p class="text-sm">
+                For the first time in the internet’s history, trust can be a
+                public good shared by everyone and owned by no one. Control of
+                your digital data. Security. Transparency. Convenience. And most
+                importantly, trust.
+              </p>
+            </div>
+          </div>
+          <div class="slick-carousel-item p-4">
+            <div class="relative">
+              <img
+                class="relative w-full"
+                src="/Assets/youssef/sidedefault2.jpg"
+                alt=""
+              />
+
+              <div
+                class="absolute top-0 w-full h-full flex justify-center items-center"
+              >
+                <i class="bx bx-play-circle text-white text-6xl"></i>
+              </div>
+            </div>
+            <div class="text-white text-center my-6">
+              <h2 class="text-2xl mb-5 font-semibold">
+                Benefits of Blockchain Technology
+              </h2>
+              <p class="text-sm">
+                For the first time in the internet’s history, trust can be a
+                public good shared by everyone and owned by no one. Control of
+                your digital data. Security. Transparency. Convenience. And most
+                importantly, trust.
+              </p>
+            </div>
+          </div>
+          <div class="slick-carousel-item p-4">
+            <div class="relative">
+              <img
+                class="relative w-full"
+                src="Assets/youssef/sddefault.jpg"
+                alt=""
+              />
+
+              <div
+                class="absolute top-0 w-full h-full flex justify-center items-center"
+              >
+                <i class="bx bx-play-circle text-white text-6xl"></i>
+              </div>
+            </div>
+            <div class="text-white text-center my-6">
+              <h2 class="text-2xl mb-5 font-semibold">
+                Benefits of Blockchain Technology
+              </h2>
+              <p class="text-sm">
+                For the first time in the internet’s history, trust can be a
+                public good shared by everyone and owned by no one. Control of
+                your digital data. Security. Transparency. Convenience. And most
+                importantly, trust.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Link Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      // Delay the execution of the script by 1 second
+      $(document).ready(function () {
+        $(".slick").slick({
+          slidesToShow: 2, // Show 2 slides at a time
+          slidesToScroll: 1, // Scroll 1 slide at a time
+          autoplay: true, // Autoplay the slider
+          autoplaySpeed: 2000, // Autoplay speed in milliseconds (3 seconds)
+          dots: true, // Show navigation dots
+          responsive: [
+            {
+              breakpoint: 768, // Breakpoint for smaller screens
+              settings: {
+                slidesToShow: 1, // Show 1 slide at a time on smaller screens
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
 </html>
