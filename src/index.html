@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <title>Mehdi's Sections</title>
+</head>
+<body>
+
+  <!-- SECTION 1 -->
+  
+  <section class="px-40 pt-10 flex" >
+    
+    <div class="text-black mt-40 max-w-md relative">
+      <h1 class="text-6xl text-gray-700 font-barlow">Web3 ID<br><span class="font-barlow font-light">App</span></h1>
+      <br>
+      <br>
+      <p>A Web3 ID allows you to safely own and store your personal information, assets, and the data you generate online. You control who has access, how much they have access to, and when they have access to it – all from a user-friendly app. Take charge of your digital destiny as you confidently navigate the Web3 ecosystem.</p>
+      <br>
+      <br>
+      <a href="#" class="text-white h-26 bg-gradient-to-r from-cyan-700 to-cyan-500 hover:from-cyan-500 hover:to-cyan-700 transition-opacity rounded-3xl py-3 px-10 font-medium inline-block mr-4">Learn More</a>
+
+    </div>
+
+    <video id="myVideo" class="w-full xl:w-1/2 xl:absolute bottom-0 right-20 " width="320" height="240" autoplay muted data-start-loop="3.2">
+      <source src="../Assets/videos/kartafin.mp4" type="video/mp4"> Your browser does not support the video tag.
+    </video>
+
+  </section>
+
+<!-- SECTION 2 -->
+  <section class=" flex" >
+      
+    
+    <video class="w-full xl:w-3/5 xl:relative bottom-0" autoplay muted loop>
+      <source src="../Assets/videos/BCI-EqusX-Space-LEFT.mp4" type="video/mp4"> Your browser does not support the video tag.
+    </video>
+
+    <div class="text-black mt-48 ml-10 max-w-md relative">
+      <h1 class="text-6xl text-gray-700 font-barlow">Immersive Experience<br><span class="font-barlow font-light">Platform</span></h1>
+      <br>
+      <br>
+      <p>In the next generation of social engagement, our Immersive Experience Platform puts you in charge of your digital presence. Explore curated journeys while safeguarding your privacy, marking the frontier of digital trust where you experience the web on your terms.</p>
+      <br>
+      <br>
+      <a href="#" class="text-white h-26 bg-gradient-to-r from-cyan-700 to-cyan-500 hover:from-cyan-500 hover:to-cyan-700 transition-opacity rounded-3xl py-3 px-10 font-medium inline-block mr-4">Learn More</a>
+
+    </div>
+
+
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="px-40 flex" >
+    
+    <div class="text-black mt-40 max-w-md relative">
+      <h1 class="text-6xl text-gray-700 font-barlow">Web3<br><span class="font-barlow font-light"> Business Solutions</span></h1>
+      <br>
+      <br>
+      <p>Embark on a new internet frontier, where seamless interaction propels business evolution. Our business solutions unveil a transformative ecosystem, reshaping digital landscapes and unlocking unparalleled opportunities. Committed to Web3 principles, our toolkit propels a new era of customer relationships and revenue potentials, defining the digital realm’s evolution.</p>
+      <br>
+      <br>
+      <a href="#" class="text-white h-26 bg-gradient-to-r from-cyan-700 to-cyan-500 hover:from-cyan-500 hover:to-cyan-700 transition-opacity rounded-3xl py-3 px-10 font-medium inline-block mr-4">Learn More</a>
+
+    </div>
+
+    <video class="w-full xl:w-1/2 xl:absolute right-20 absolute" autoplay muted loop>
+      <source src="../Assets/videos/product-video.m4v" type="video/mp4"> Your browser does not support the video tag.
+    </video>
+
+  </section>
+
+
+
+
+<script>
+  // Get the video element
+  var video = document.getElementById("myVideo");
+  
+  // When the video ends, execute the loop function
+  video.addEventListener("ended", function() {
+    // Set the current time to 3 seconds before the end
+    video.currentTime = video.duration - 2.3;
+  
+    // Play the video
+    video.play();
+  });
+  </script>
+
+<!-- <script>
+  var video = document.getElementById("myVideo");
+  var loopStart = video.duration - 5; // Assuming you want to loop the last 5 seconds
+  video.addEventListener("timeupdate", function() {
+      if (video.currentTime >= loopStart) {
+          video.currentTime = loopStart;
+      }
+  });
+</script> -->
+</body>
+</html>
