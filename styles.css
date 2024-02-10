@@ -1,0 +1,5 @@
+body{
+    font-family: 'CustomFont';
+    src: url('akrobat/Akrobat-Light.otf') format('woff2');
+    /* Add other font formats (e.g., woff, ttf) for cross-browser compatibility */
+  }
