@@ -9,7 +9,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    
     <link rel="stylesheet" href="style.css" />
     <title>BlockChains</title>
   </head>
@@ -25,7 +24,7 @@
 
   <nav
   id="nav"
-    class="flex justify-between items-center w-[100%]  py-4 px-8  sticky fixed top-0 z-10 bg-transparent"
+    class="flex justify-between items-center w-[100%]  py-4 px-8  sticky top-0 z-10 bg-transparent"
   >
     <div class="flex items-center">
       <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden text-[#343434] "></ion-icon>
@@ -59,12 +58,7 @@
       </ul>
     </div>
   </nav>
-
-
-
-
-
-    <section class="min-h-screen relative">
+    <section class="min-h-screen relative  pb-[3rem]">
       <header class="">
         <div class="flex-col mt-[-12.5rem]">
           <img
@@ -73,10 +67,10 @@
             alt="hero-pic"
           />
           <div
-            class="items-center justify-center text-center animate__fadeOutUp fade-text" id="fadingText"
+            class="items-center justify-center text-center mt-[4rem] animate__fadeOutUp fade-text" id="fadingText"
           >
             <h1 class="text-5xl px-5 mb-3">Web3 <b> ID</b></h1>
-            <p class="text-lg text-base tracking-[.10em]">
+            <p class="font-normal font-sans">
               In the new and exciting world of the decentralized
               internet, otherwise known as Web3, we believe </br> the foundation
               starts with having a digital identity that you own and control.
@@ -86,69 +80,49 @@
       </header>
     </section>
 
-    <section class="py-96 flex justify-center text-center mx-auto ">
-      <p class="text-5xl leading-snug w-[700px] px-[40px] text-[#808080]">
-        We are committed to an <b class=" text-black">interoperable</b> Web3 ID
-        that can be <b class=" text-black">your identity</b>  wherever you go in the emerging <b class=" text-black">Web3 world</b> .
+    <section class="bg-[url('./Assets/productCurvyLines.png')] py-80 flex justify-center text-center mx-auto">
+      
+      <p class="headline text-5xl leading-snug w-[850px] px-[20px] text-[#000]">
+        <span class="word0 text-5xl leading-snug px-[10px] ">We</span>
+        <span class="word1 text-5xl leading-snug px-[10px] ">are</span>
+        <span class="word2 text-5xl leading-snug px-[10px] ">committed</span>
+        <span class="word3 text-5xl leading-snug px-[10px] ">to</span>
+        <span class="word4 text-5xl leading-snug px-[10px] ">an</span>
+        <span class="word5 text-5xl leading-snug px-[10px] text-[#808080]">interoperable</span>
+        <span class="word6 text-5xl leading-snug px-[10px] ">Web3</span> 
+        <span class="word7 text-5xl leading-snug px-[10px] ">ID</span>
+        <span class="word8 text-5xl leading-snug px-[10px] ">that</span>
+        <span class="word9 text-5xl leading-snug px-[10px] ">can</span>
+        <span class="word10 text-5xl leading-snug px-[10px] ">be</span>
+        <span class="word11 text-5xl leading-snug px-[10px] text-[#808080]">your</span>
+        <span class="word12 text-5xl leading-snug px-[10px] text-[#808080]">indentity</span>
+        <span class="word13 text-5xl leading-snug px-[10px] ">wherever</span>
+        <span class="word14 text-5xl leading-snug px-[10px] ">you</span>
+        <span class="word15 text-5xl leading-snug px-[10px] ">go</span>
+        <span class="word16 text-5xl leading-snug px-[10px] ">in</span>
+        <span class="word17 text-5xl leading-snug px-[10px] ">the</span>
+        <span class="word18 text-5xl leading-snug px-[10px] ">emerging</span>
+        <span class="word19 text-5xl leading-snug px-[10px] text-[#808080]">Web3</span>
+        <span class="word20 text-5xl leading-snug px-[10px] text-[#808080]">world</span> 
+        <span class="word21 text-5xl leading-snug">.</span>
       </p>
     </section>
-<script>
-function onToggleMenu(icon) {
-    const navLinks = document.querySelector('.nav-links1');
-    const menuLinks = document.querySelectorAll('.nav-links1 li');
-    const navLinks2 = document.querySelector('.nav-links2');
-    const menuLink2 = document.querySelectorAll('.nav-links2 li');
-    navLinks.classList.toggle('hidden');
-    navLinks2.classList.toggle('hidden');
+    <div class="relative h-screen flex items-center justify-center">
+    
+      <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+        <source src="./Assets/Background - 25887.mp4" type="video/mp4">
+      </video>
+      <div class="absolute inset-0 bg-black bg-opacity-20">
+          <div class="relative z-10 text-black flex justify-center text-center mx-auto">
+        <h1 class="absolute top-80 left-[-80] text-6xl font-bold">Your Content Goes Here</h1>
+        <p class="absolute top-96 left-[-80] mt-4 text-5xl">This is some sample text on top of the video background.</p>
+      </div>
+      </div>
+    </div>
 
-
-
-  }
- 
-
-  //hiding nav after scolling
-  let lastScrollTop = 0;
-  window.addEventListener('scroll', () => {
-    const currentScrollTop = window.scrollY;
-    const nav =  document.querySelector('nav');
-    if (currentScrollTop >10){
-      nav.classList.add('bg-white');
-    }else{
-      nav.classList.remove('bg-white')
-    }
-
-
-    if (currentScrollTop > lastScrollTop) {
-      nav.classList.add('scroll-hide');
-    } else {
-      nav.classList.remove('scroll-hide');
-    }
-    lastScrollTop = currentScrollTop;
-  });
-
-  //the fating text
-  document.addEventListener('DOMContentLoaded', function () {
-    var fadingText = document.getElementById('fadingText');
-
-    window.addEventListener('scroll', function () {
-        var scrollPosition = window.scrollY;
-        var fadeFactor = 0.002;
-        var opacity = 1 - (scrollPosition * fadeFactor);
-
-        fadingText.style.opacity = opacity > 0 ? opacity : 0;
-    });
-});
-
-//loading 
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(function () {
-    // Hide loading page
-    const loadingPage = document.getElementById("loading-page");
-    loadingPage.style.display = "none";
-
-    document.body.style.overflow = "auto"; 
-  }, 2000);
-});
-</script>
+    <!-- Features -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src = "script.js"></script>
   </body>
 </html>
