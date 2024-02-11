@@ -51,3 +51,15 @@ for (let i = 0; i <= 21; i++) {
   const delay = i * 100;
   ScrollReveal().reveal(selector, { delay: delay });
 }
+
+// video
+
+const video = document.querySelector(".video-container video");
+
+video.addEventListener("mouseenter", function () {
+  video.play();
+});
+
+video.addEventListener("mouseleave", function () {
+  video.pause();
+});
