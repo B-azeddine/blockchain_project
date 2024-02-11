@@ -65,11 +65,12 @@ video.addEventListener("mouseleave", function () {
 });
 
 // video section mehdi
-      // Get the video element
+
+// Get the video element
 const mvideo = document.getElementById("video-mehdi");
 
 // When the video ends, execute the loop function
-mvideo.addEventListener("ended", function() {
+mvideo.addEventListener("ended", function () {
   // Set the current time to 3 seconds before the end
   mvideo.currentTime = mvideo.duration - 2.3;
 
@@ -77,3 +78,25 @@ mvideo.addEventListener("ended", function() {
   mvideo.play();
 });
 
+// youssef part
+
+window.addEventListener("scroll", function () {
+  let sticky = document.getElementById("sticky");
+  let bgblack = document.getElementById("bg-black");
+  let ussefimg = document.getElementById("ussefimg");
+  let scrollPosition = window.scrollY;
+
+  if (scrollPosition >= 4700) {
+    sticky.style.position = "relative";
+    bgblack.style.display = "block";
+    bgblack.classList.remove = "hidden";
+    sticky.classList.remove("sticky");
+    ussefimg.classList.remove("hidden");
+  } else {
+    bgblack.style.display = "";
+    bgblack.classList.add = "hidden";
+    sticky.style.position = "";
+    sticky.classList.add("sticky");
+    ussefimg.classList.add("hidden");
+  }
+});
