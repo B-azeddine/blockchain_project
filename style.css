@@ -4,7 +4,7 @@
 }
 * {
   font-family: "Akrobat";
-  font-weight: 300 , 400 , 500 , 600;
+  font-weight: 300, 400, 500, 600;
   font-style: normal;
 }
 
@@ -30,7 +30,6 @@
 .animate-fade-out {
   animation: fade-out 1s ease-in-out 1s forwards;
 }
-
 
 .clear {
   clear: both;
@@ -58,12 +57,12 @@
   z-index: 100;
 }
 
-.checkBox input[type=checkbox]:checked + div {
+.checkBox input[type="checkbox"]:checked + div {
   left: -20px;
   top: -20px;
 }
 
-.checkBox input[type=checkbox] {
+.checkBox input[type="checkbox"] {
   position: absolute;
   left: 50px;
   visibility: hidden;
@@ -75,9 +74,7 @@
 
 /* Mehdi's CSS */
 
-
-
-.mehdi button{
+.mehdi button {
   color: #f6f1f1;
   position: relative;
   font-family: sans-serif;
@@ -90,15 +87,14 @@
   border-radius: 50px;
 }
 
-#btn1{
+#btn1 {
   font-family: "Open Sans", sans-serif;
   background: rgb(12, 119, 138);
   font-weight: 500 !important;
-
 }
 
-.mehdi button:before{
-  content: '';
+.mehdi button:before {
+  content: "";
   position: absolute;
   height: 200px;
   width: 15px;
@@ -107,11 +103,10 @@
   filter: blur(20px);
   opacity: 1.7;
   top: -30px;
-  transition:  1.6s;
+  transition: 1.6s;
   overflow: hidden;
 }
 
-.mehdi button:hover:before{
+.mehdi button:hover:before {
   transform: translate(100px, 0px);
 }
-
