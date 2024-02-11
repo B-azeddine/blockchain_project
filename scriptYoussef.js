@@ -29,4 +29,24 @@
 //     });
 //   });
 // });
-// console.log(window.scrollY);
+
+window.addEventListener("scroll", function () {
+  let sticky = document.getElementById("sticky");
+  let bgblack = document.getElementById("bg-black");
+  let ussefimg = document.getElementById("ussefimg");
+  let scrollPosition = window.scrollY;
+
+  if (scrollPosition >= 1910) {
+    sticky.style.position = "relative";
+    bgblack.style.display = "block";
+    bgblack.classList.remove = "hidden";
+    sticky.classList.remove("sticky");
+    ussefimg.classList.remove("hidden");
+  } else {
+    bgblack.style.display = "";
+    bgblack.classList.add = "hidden";
+    sticky.style.position = "";
+    sticky.classList.add("sticky");
+    ussefimg.classList.add("hidden");
+  }
+});
