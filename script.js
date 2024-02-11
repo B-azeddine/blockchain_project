@@ -52,6 +52,23 @@ for (let i = 0; i <= 21; i++) {
   ScrollReveal().reveal(selector, { delay: delay });
 }
 
+for (let i = 1; i <= 3; i++) {
+  ScrollReveal().reveal(`.rev${i}`, {
+    duration: 3000,
+    beforeReveal: (domEl) => {
+      // Check if the element being revealed is the video element
+      if (domEl.classList.contains("video-element")) {
+        // Play the video when it is revealed
+        domEl.play();
+      }
+    },
+  });
+}
+
+ScrollReveal().reveal(".nass1", { duration: 3000 });
+ScrollReveal().reveal(".nass2", { duration: 5000 });
+ScrollReveal().reveal(".nass3", { duration: 7000 });
+
 // video
 
 const video = document.querySelector(".video-container video");
@@ -100,3 +117,5 @@ window.addEventListener("scroll", function () {
     ussefimg.classList.add("hidden");
   }
 });
+
+// color to use #077370
