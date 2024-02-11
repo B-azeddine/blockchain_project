@@ -62,6 +62,43 @@
   top: -20px;
 }
 
+.nassime button {
+  color: #f6f1f1;
+  position: relative;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 55px 15px;
+  padding: 13px 38px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 50px;
+}
+
+#btn2 {
+  font-family: "Open Sans", sans-serif;
+  background: rgb(12, 119, 138);
+  font-weight: 500 !important;
+}
+
+.nassime button:before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 15px;
+  background: #ffffff;
+  box-shadow: 0 0 6px #fff;
+  filter: blur(20px);
+  opacity: 1.7;
+  top: 22%;
+  transition: 1.6s;
+  overflow: hidden;
+}
+
+.nassime button:hover:before {
+  transform: translate(80px, 0px);
+}
+
 .checkBox input[type="checkbox"] {
   position: absolute;
   left: 50px;
@@ -71,6 +108,8 @@
 .transition {
   transition: 1000ms ease-in;
 }
+
+
 
 /* Mehdi's CSS */
 
