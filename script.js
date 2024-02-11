@@ -63,3 +63,17 @@ video.addEventListener("mouseenter", function () {
 video.addEventListener("mouseleave", function () {
   video.pause();
 });
+
+// video section mehdi
+      // Get the video element
+const mvideo = document.getElementById("video-mehdi");
+
+// When the video ends, execute the loop function
+mvideo.addEventListener("ended", function() {
+  // Set the current time to 3 seconds before the end
+  mvideo.currentTime = mvideo.duration - 2.3;
+
+  // Play the video
+  mvideo.play();
+});
+

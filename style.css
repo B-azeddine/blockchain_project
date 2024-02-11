@@ -72,3 +72,46 @@
 .transition {
   transition: 1000ms ease-in;
 }
+
+/* Mehdi's CSS */
+
+
+
+.mehdi button{
+  color: #f6f1f1;
+  position: relative;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 13px 38px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 50px;
+}
+
+#btn1{
+  font-family: "Open Sans", sans-serif;
+  background: rgb(12, 119, 138);
+  font-weight: 500 !important;
+
+}
+
+.mehdi button:before{
+  content: '';
+  position: absolute;
+  height: 200px;
+  width: 15px;
+  background: #ffffff;
+  box-shadow: 0 0 6px #fff;
+  filter: blur(20px);
+  opacity: 1.7;
+  top: -30px;
+  transition:  1.6s;
+  overflow: hidden;
+}
+
+.mehdi button:hover:before{
+  transform: translate(100px, 0px);
+}
+
