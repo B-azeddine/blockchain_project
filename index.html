@@ -21,19 +21,22 @@
     <section class="h-[100vh] bg-red-500"></section>
 
     <!-- Youssef Ababou -->
-    <section class="bg-zinc-900">
-      <div class="grid grid-cols-1 lg:grid-cols-2 ps-8 lg:ps-28">
-        <div class="py-24">
+    <section class="">
+      <div
+        class="changingText grid grid-cols-1 lg:grid-cols-2 ps-8 lg:ps-28 h-[0px] sticky top-0 z-10 mix-blend-difference"
+      >
+        <div id="changingText" class="fixedBackground py-24 text-white">
           <h2
-            class="text-white text-5xl lg:text-7xl mb-1 lg:mb-32 py-12 lg:py-0"
+            id="changingText"
+            class="text-5xl lg:text-7xl mb-1 lg:mb-32 py-12 lg:py-0"
           >
             Experience <br />
             the Blockchains Difference
           </h2>
-          <h4 class="text-white text-2xl lg:text-3xl lg:mb-12 mb-4">
+          <h4 id="changingText" class="text-2xl lg:text-3xl lg:mb-12 mb-4">
             You should be in control of you.
           </h4>
-          <p class="text-white w-[100%] lg:w-[60%]">
+          <p id="changingText" class="w-[100%] lg:w-[60%]">
             Our software solutions presently in development focus on preparing
             the world for the next phase of the internet’s evolution to Web3 –
             leveraging a Web3 ID to usher in a new era of control where all Web3
@@ -42,12 +45,20 @@
         </div>
         <div>
           <img
+            class=""
             src="Assets/differentSectionspics/LOGO_BLK_R_00030-min.png"
             alt=""
           />
         </div>
       </div>
-      <div class="px-8 lg:px-28">
+      <div class="h-[100vh] bg-white"></div>
+      <!-- Second Div -->
+      <div class="h-[100vh] bg-black"></div>
+
+      <!-- Test -->
+
+      <!-- Slide -->
+      <div class="px-8 lg:px-28 bg-zinc-900">
         <div class="slick">
           <div class="slick-carousel-item p-4">
             <div class="relative">
@@ -130,8 +141,14 @@
         </div>
       </div>
     </section>
+    <script src="scriptYoussef.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
     <!-- Link Slick JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
