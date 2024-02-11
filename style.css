@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Akrobat";
+  src: url("./akrobat/Akrobat-Regular.ttf");
+}
+* {
+  font-family: "Akrobat";
+  font-weight: 300 , 400 , 500 , 600;
+  font-style: normal;
+}
+
+.scroll-hide {
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+}
+
+.fade-text {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-fade-out {
+  animation: fade-out 1s ease-in-out 1s forwards;
+}
+
+
+.clear {
+  clear: both;
+}
+
+.checkBox {
+  display: block;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(75 85 99);
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.checkBox div {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  top: -52px;
+  left: -52px;
+  position: absolute;
+  transform: rotateZ(45deg);
+  z-index: 100;
+}
+
+.checkBox input[type=checkbox]:checked + div {
+  left: -20px;
+  top: -20px;
+}
+
+.checkBox input[type=checkbox] {
+  position: absolute;
+  left: 50px;
+  visibility: hidden;
+}
+
+.transition {
+  transition: 1000ms ease-in;
+}
