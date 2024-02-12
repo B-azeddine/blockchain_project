@@ -52,22 +52,20 @@ for (let i = 0; i <= 21; i++) {
   ScrollReveal().reveal(selector, { delay: delay });
 }
 
+ScrollReveal().reveal(".nass1", { duration: 3000 });
+ScrollReveal().reveal(".nass2", { duration: 5000 });
+ScrollReveal().reveal(".nass3", { duration: 7000 });
+
 for (let i = 1; i <= 3; i++) {
   ScrollReveal().reveal(`.rev${i}`, {
     duration: 3000,
     beforeReveal: (domEl) => {
-      // Check if the element being revealed is the video element
       if (domEl.classList.contains("video-element")) {
-        // Play the video when it is revealed
         domEl.play();
       }
     },
   });
 }
-
-ScrollReveal().reveal(".nass1", { duration: 3000 });
-ScrollReveal().reveal(".nass2", { duration: 5000 });
-ScrollReveal().reveal(".nass3", { duration: 7000 });
 
 // video
 
@@ -83,15 +81,10 @@ video.addEventListener("mouseleave", function () {
 
 // video section mehdi
 
-// Get the video element
 const mvideo = document.getElementById("video-mehdi");
-
 // When the video ends, execute the loop function
 mvideo.addEventListener("ended", function () {
-  // Set the current time to 3 seconds before the end
   mvideo.currentTime = mvideo.duration - 2.3;
-
-  // Play the video
   mvideo.play();
 });
 
