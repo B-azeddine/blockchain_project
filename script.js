@@ -1,12 +1,3 @@
-// function onToggleMenu(icon) {
-//   const navLinks = document.querySelector(".nav-links1");
-//   const menuLinks = document.querySelectorAll(".nav-links1 li");
-//   navLinks.classList.toggle("hidden");
-//   menuLinks.forEach((link) => {
-//     link.classList.toggle("mx-3");
-//   });
-// }
-
 //hiding nav after scolling
 let lastScrollTop = 0;
 window.addEventListener("scroll", () => {
@@ -17,10 +8,9 @@ window.addEventListener("scroll", () => {
     nav.classList.add("bg-white");
   } else {
     nav.classList.remove("bg-white");
-
   }
 
-  if (currentScrollTop==0) {
+  if (currentScrollTop == 0) {
     logofixed.classList.add("hidden");
   } else {
     logofixed.classList.remove("hidden");
@@ -122,3 +112,19 @@ window.addEventListener("scroll", function () {
 });
 
 // color to use #077370
+
+let calcScrollValue = () => {
+  const scrollEl = document.querySelector(".cup");
+  let pos = document.documentElement.scrollTop;
+  if (pos > 100) {
+    scrollEl.style.display = "block";
+  } else {
+    scrollEl.style.display = "none";
+  }
+  scrollEl.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;

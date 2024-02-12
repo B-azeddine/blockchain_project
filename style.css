@@ -7,6 +7,9 @@
   font-weight: 300, 400, 500, 600;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .scroll-hide {
   transform: translateY(-100%);
@@ -34,6 +37,7 @@
 .clear {
   clear: both;
 }
+/* nassime */
 
 .checkBox {
   display: block;
@@ -109,8 +113,6 @@
   transition: 1000ms ease-in;
 }
 
-
-
 /* Mehdi's CSS */
 
 .mehdi button {
@@ -148,4 +150,64 @@
 
 .mehdi button:hover:before {
   transform: translate(100px, 0px);
+}
+
+/*scroll*/
+
+.cup {
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  height: 65px;
+  width: 65px;
+  place-items: center;
+  border-top: 1px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #fff, 0 20px 55px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.cup:before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 35px;
+  left: 65px;
+  top: 0px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.water {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.water .wave {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./Assets/water.png);
+  animation: animate 1s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 200px;
+  }
+}
+
+#particles-js {
+  height: 90vh;
+  width: 100%;
 }

@@ -16,3 +16,11 @@ $(document).ready(function () {
     ],
   });
 });
+
+$(window).scroll(function () {
+  const scroll = $(window).scrollTop();
+  const dh = $(document).height();
+  const wh = $(window).height();
+  let scrollPercent = (scroll / (dh + wh)) * 100;
+  $(".wave").css("top", scrollPercent + "%");
+});
