@@ -40,9 +40,8 @@
     class="flex justify-between items-center w-[100%]  py-4 px-8  sticky top-0 z-10 bg-transparent"
   >
     <div class="flex items-center">
-      <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden text-[#343434] "></ion-icon>
       <img
-        class="w-[210px] h-[66px] cursor-pointer hidden md:flex"
+        class="w-[210px] h-[66px] cursor-pointer hidden md:flex z-20"
         src="./Assets/heropictures/blockchains-logo.svg"
         alt="..."
       />
@@ -71,7 +70,14 @@
       </ul>
     </div>
   </nav>
+  <div id="logofixed" class="fixed mt-[-4.5rem] hidden ml-[1.6rem] z-20 ">
+    <img 
+    class="w-[48px] h-[48px] sticky top-0 z-10 bg-transparent cursor-pointer hidden  md:flex z-20 filter brightness-0"
+    src="Assets/heropictures/cropped-Blockchain-Favicon-270x270.png" 
+    alt="logo blue">
+  </div>
     <section class="min-h-screen relative  pb-[3rem]">
+
       <header class="">
         <div class="video-container flex-col mt-[-12.5rem]">
           <video

@@ -1,26 +1,36 @@
-function onToggleMenu(icon) {
-  const navLinks = document.querySelector(".nav-links1");
-  const menuLinks = document.querySelectorAll(".nav-links1 li");
-  navLinks.classList.toggle("hidden");
-  menuLinks.forEach((link) => {
-    link.classList.toggle("mx-3");
-  });
-}
+// function onToggleMenu(icon) {
+//   const navLinks = document.querySelector(".nav-links1");
+//   const menuLinks = document.querySelectorAll(".nav-links1 li");
+//   navLinks.classList.toggle("hidden");
+//   menuLinks.forEach((link) => {
+//     link.classList.toggle("mx-3");
+//   });
+// }
 
 //hiding nav after scolling
 let lastScrollTop = 0;
 window.addEventListener("scroll", () => {
   const currentScrollTop = window.scrollY;
   const nav = document.querySelector("nav");
+  const logofixed = document.getElementById("logofixed");
   if (currentScrollTop > 0) {
     nav.classList.add("bg-white");
   } else {
     nav.classList.remove("bg-white");
+
+  }
+
+  if (currentScrollTop==0) {
+    logofixed.classList.add("hidden");
+  } else {
+    logofixed.classList.remove("hidden");
   }
 
   if (currentScrollTop > lastScrollTop) {
     nav.classList.add("scroll-hide");
+    logofixed.classList.remove("hidden");
   } else {
+    logofixed.classList.add("hidden");
     nav.classList.remove("scroll-hide");
   }
   lastScrollTop = currentScrollTop;
